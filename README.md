@@ -31,7 +31,7 @@ upstream `OL9U<U>_x86_64-kvm-b<B>.qcow2` KVM templates published at
 them through the openimages.cloud signed-release pipeline.
 
 OL9 is supported under Oracle's premier support until **2032-06-30**
-(extended support to 2034-06-30) — fresh deployment target. For OL10,
+(extended support to 2034-06-30): fresh deployment target. For OL10,
 see the sibling repo [open-img-cloud/oracle-linux-10][ol10-repo].
 
 The build pipeline is shared with the rest of [`open-img-cloud`][org]:
@@ -54,7 +54,7 @@ Customisations applied to the upstream rootfs:
 
 The upstream OL9 KVM template already ships cloud-init, openssh-server,
 GRUB2 with serial console wired (`console=tty0 console=ttyS0,115200`),
-and a default user (`oracle` or `cloud-user` depending on build) — we
+and a default user (`oracle` or `cloud-user` depending on build): we
 don't override any of that.
 
 Each release publishes:
@@ -95,7 +95,7 @@ cosign verify-blob \
 ```
 
 The certificate identity points at the **reusable** build workflow in
-`open-img-cloud/.github` — that's where GitHub's OIDC binds the SAN for
+`open-img-cloud/.github`: that's where GitHub's OIDC binds the SAN for
 keyless signing. To tie the artifact back to *this* repo's commit, also
 check `MANIFEST.json` (commit, build_url, builder digest).
 
@@ -168,7 +168,7 @@ Distributed under the GPL-2.0 License. See `LICENSE`.
 
 ## Contact
 
-Kevin Allioli — kevin@stackops.ch · [@stackopshq](https://twitter.com/stackopshq)
+Kevin Allioli · kevin@stackops.ch · [@stackopshq](https://twitter.com/stackopshq)
 
 Project: [open-img-cloud/oracle-linux-9](https://github.com/open-img-cloud/oracle-linux-9)
 

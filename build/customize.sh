@@ -11,7 +11,7 @@
 # cache cleanup so the published qcow2 stays small.
 #
 # Note: like AL2/AL2023 we don't try to install qemu-guest-agent here
-# — Oracle's pinned dnf snapshot can return "No match for argument" on
+#: Oracle's pinned dnf snapshot can return "No match for argument" on
 # packages we expect to be there. Add it back as a follow-up once the
 # right repo is identified.
 
