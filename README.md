@@ -109,7 +109,7 @@ curl -fLO https://images.openimages.cloud/oracle-linux-9/<V>/oracle-linux-9-<V>-
 
 openstack image create \
     --disk-format qcow2 --container-format bare \
-    --min-disk 25 \
+    --min-disk 40 \
     --file oracle-linux-9-<V>-x86_64.qcow2 \
     'Oracle Linux 9 <V>'
 ```
